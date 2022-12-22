@@ -7,13 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { TypographyComponent } from './typography/typography.component';
 import { ButtonsComponent } from './buttons/buttons.component';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { ButtontoggleComponent } from './buttontoggle/buttontoggle.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
     AppComponent,
     TypographyComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    ButtontoggleComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon'
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
