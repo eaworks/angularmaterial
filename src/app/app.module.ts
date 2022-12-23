@@ -22,6 +22,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { ListComponent } from './list/list.component';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { MatMenuModule } from '@angular/material/menu';
     ProgressBarComponent,
     ToolbarComponent,
     SidenavComponent,
-    MenuComponent
+    MenuComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatProgressBarModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatMenuModule
+    MatMenuModule,
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
