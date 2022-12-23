@@ -10,13 +10,16 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtontoggleComponent } from './buttontoggle/buttontoggle.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatBadgeModule } from '@angular/material/badge';
+import { BadgeComponent } from './badge/badge.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TypographyComponent,
     ButtonsComponent,
-    ButtontoggleComponent
+    ButtontoggleComponent,
+    BadgeComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatButtonModule,
     MatIconModule,
     MatButtonToggleModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
