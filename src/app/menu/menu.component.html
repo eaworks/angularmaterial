@@ -1,1 +1,28 @@
-<p>menu works!</p>
+<mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="submenuFront"> Fronted</button>
+    <button mat-menu-item [matMenuTriggerFor]="submenuBack">Backend</button>
+</mat-menu>
+<button class="title" mat-raised-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+
+<mat-menu #submenuFront="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue Js</button>
+</mat-menu>
+<mat-menu #submenuBack="matMenu">
+    <button mat-menu-item>C#</button>
+    <button mat-menu-item>Python</button>
+    <button mat-menu-item>NodeJs</button>
+</mat-menu>
+
+<mat-menu #dataMenu="matMenu">
+    <ng-template matMenuContent let-name="name">
+        <button mat-menu-item>Ayarlar</button>
+        <button mat-menu-item>Cikis Yap {{name}}</button>
+    </ng-template>
+</mat-menu>
+<button class="title" mat-raised-button [matMenuTriggerData]="{name:'Ersin'}"
+    [matMenuTriggerFor]="dataMenu">Menu</button>
+<button class="title" mat-raised-button [matMenuTriggerData]="{name:'Erman'}"
+    [matMenuTriggerFor]="dataMenu">Menu</button>
