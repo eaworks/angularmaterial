@@ -18,6 +18,9 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BadgeComponent,
     ProgressSpinnerComponent,
     ProgressBarComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SidenavComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatProgressSpinnerModule,
     MatProgressBarModule,
     MatToolbarModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

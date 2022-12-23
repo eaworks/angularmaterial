@@ -1,0 +1,9 @@
+<mat-drawer-container>
+    <mat-drawer #sidenav mode="side" [opened]="opened">Sidenav</mat-drawer>
+    <mat-drawer-content>Main
+        <button mat-raised-button (click)="openSide()">Toogle Button</button>
+        <button mat-raised-button (click)="sidenav.open()">Ac</button>
+        <button mat-raised-button (click)="sidenav.close()">Kapat</button>
+        <button mat-raised-button (click)="sidenav.toggle()">Toogle Kutuphane</button>
+    </mat-drawer-content>
+</mat-drawer-container>
