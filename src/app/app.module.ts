@@ -25,6 +25,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ListComponent } from './list/list.component';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
+import { GridlistComponent } from './gridlist/gridlist.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { MatDividerModule } from '@angular/material/divider';
     ToolbarComponent,
     SidenavComponent,
     MenuComponent,
-    ListComponent
+    ListComponent,
+    GridlistComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatSidenavModule,
     MatMenuModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
