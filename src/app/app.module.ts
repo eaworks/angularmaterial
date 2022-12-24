@@ -29,6 +29,9 @@ import { GridlistComponent } from './gridlist/gridlist.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { CardComponent } from './card/card.component';
+import { MatCardModule } from '@angular/material/card';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MenuComponent,
     ListComponent,
     GridlistComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    CardComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatListModule,
     MatDividerModule,
     MatGridListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
