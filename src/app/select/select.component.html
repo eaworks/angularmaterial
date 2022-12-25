@@ -1,0 +1,30 @@
+<mat-form-field>
+    <mat-label>Frameworkler</mat-label>
+    <mat-select [(value)]="selectedValue">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue Js</mat-option>
+    </mat-select>
+
+</mat-form-field>
+
+{{selectedValue}}
+
+
+<br />
+
+<mat-form-field>
+    <mat-label>Ilgi Alanlari</mat-label>
+    <mat-select [(value)]="selectedValue" multiple>
+        <mat-optgroup label="Frontend">
+            <mat-option value="angular">Angular</mat-option>
+            <mat-option value="react">React</mat-option>
+            <mat-option value="vue">Vue Js</mat-option>
+        </mat-optgroup>
+        <mat-optgroup label="Backend">
+            <mat-option value="csharp">C#</mat-option>
+            <mat-option value="python">Python</mat-option>
+            <mat-option value="nodejs">Node Js</mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>

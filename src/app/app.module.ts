@@ -38,6 +38,9 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { FormfieldComponent } from './formfield/formfield.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { SelectComponent } from './select/select.component';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -57,7 +60,8 @@ import { MatInputModule } from '@angular/material/input';
     CardComponent,
     TabsComponent,
     StepperComponent,
-    FormfieldComponent
+    FormfieldComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +84,8 @@ import { MatInputModule } from '@angular/material/input';
     MatTabsModule,
     MatStepperModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
