@@ -40,6 +40,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { SelectComponent } from './select/select.component';
 import { MatSelectModule } from '@angular/material/select';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -61,7 +64,8 @@ import { MatSelectModule } from '@angular/material/select';
     TabsComponent,
     StepperComponent,
     FormfieldComponent,
-    SelectComponent
+    SelectComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
@@ -86,6 +90,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    MatAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
