@@ -35,6 +35,9 @@ import { TabsComponent } from './tabs/tabs.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { StepperComponent } from './stepper/stepper.component';
 import { MatStepperModule } from '@angular/material/stepper';
+import { FormfieldComponent } from './formfield/formfield.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,8 @@ import { MatStepperModule } from '@angular/material/stepper';
     ExpansionPanelComponent,
     CardComponent,
     TabsComponent,
-    StepperComponent
+    StepperComponent,
+    FormfieldComponent
   ],
   imports: [
     BrowserModule,
@@ -75,6 +79,8 @@ import { MatStepperModule } from '@angular/material/stepper';
     MatCardModule,
     MatTabsModule,
     MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
