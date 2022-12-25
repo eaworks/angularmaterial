@@ -33,6 +33,8 @@ import { CardComponent } from './card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { TabsComponent } from './tabs/tabs.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { StepperComponent } from './stepper/stepper.component';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     GridlistComponent,
     ExpansionPanelComponent,
     CardComponent,
-    TabsComponent
+    TabsComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +73,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatGridListModule,
     MatExpansionModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatStepperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
