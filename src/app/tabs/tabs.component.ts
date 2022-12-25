@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 
 @Component({
   selector: 'app-tabs',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabs.component.scss']
 })
 export class TabsComponent {
+  constructor(private cdref: ChangeDetectorRef) { }
+
+  ngAfterContentChecked() {
+    this.cdref.detectChanges();
+  }
+
+  logChange(index: number | null) {
+    console.log(index);
+  }
 
 }

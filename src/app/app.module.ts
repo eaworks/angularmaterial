@@ -32,6 +32,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { CardComponent } from './card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { TabsComponent } from './tabs/tabs.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { TabsComponent } from './tabs/tabs.component';
     MatDividerModule,
     MatGridListModule,
     MatExpansionModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

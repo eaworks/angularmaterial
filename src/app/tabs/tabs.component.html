@@ -1,1 +1,26 @@
-<p>tabs works!</p>
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" #erRef
+    (selectedTabChange)="logChange(erRef.selectedIndex)">
+    <mat-tab label="Angular">Angular Content</mat-tab>
+    <mat-tab label="React">React Content</mat-tab>
+    <mat-tab label="Vue">Vue Content</mat-tab>
+</mat-tab-group>
+{{erRef.selectedIndex}}
+
+<mat-tab-group animationDuration="2000ms">
+    <mat-tab label="Angular">Angular Content</mat-tab>
+    <mat-tab label="React">React Content</mat-tab>
+    <mat-tab label="Vue">Vue Content</mat-tab>
+</mat-tab-group>
+
+<mat-tab-group dynamicHeight>
+    <mat-tab label="Short tab">
+        <div class="example-small-box mat-elevation-z4">
+            Small content
+        </div>
+    </mat-tab>
+    <mat-tab label="Long tab">
+        <div class="example-large-box mat-elevation-z4">
+            Large content
+        </div>
+    </mat-tab>
+</mat-tab-group>
