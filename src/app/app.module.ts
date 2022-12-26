@@ -56,6 +56,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogErComponent } from './dialog-er/dialog-er.component';
+import { TableComponent } from './table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -85,6 +89,7 @@ import { DialogErComponent } from './dialog-er/dialog-er.component';
     SnackbarComponent,
     DialogComponent,
     DialogErComponent,
+    TableComponent,
 
   ],
   imports: [
@@ -120,6 +125,9 @@ import { DialogErComponent } from './dialog-er/dialog-er.component';
     MatTooltipModule,
     MatSnackBarModule,
     MatDialogModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
