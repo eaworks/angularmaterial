@@ -49,6 +49,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { MatCommonModule, MatNativeDateModule } from '@angular/material/core';
+import { TooltipComponent } from './tooltip/tooltip.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -74,6 +76,7 @@ import { MatCommonModule, MatNativeDateModule } from '@angular/material/core';
     AutocompleteComponent,
     CheckboxComponent,
     DatepickerComponent,
+    TooltipComponent,
 
   ],
   imports: [
@@ -106,6 +109,7 @@ import { MatCommonModule, MatNativeDateModule } from '@angular/material/core';
     MatRadioModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
