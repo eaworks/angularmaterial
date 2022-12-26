@@ -53,6 +53,9 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { DialogComponent } from './dialog/dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogErComponent } from './dialog-er/dialog-er.component';
 
 
 @NgModule({
@@ -80,6 +83,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     DatepickerComponent,
     TooltipComponent,
     SnackbarComponent,
+    DialogComponent,
+    DialogErComponent,
 
   ],
   imports: [
@@ -114,6 +119,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatNativeDateModule,
     MatTooltipModule,
     MatSnackBarModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
