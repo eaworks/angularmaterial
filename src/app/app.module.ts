@@ -43,6 +43,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
 
 
 @NgModule({
@@ -65,7 +68,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     StepperComponent,
     FormfieldComponent,
     SelectComponent,
-    AutocompleteComponent
+    AutocompleteComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
@@ -93,6 +97,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatAutocompleteModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCheckboxModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
