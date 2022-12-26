@@ -46,6 +46,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { MatCommonModule, MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -69,7 +72,9 @@ import { MatRadioModule } from '@angular/material/radio';
     FormfieldComponent,
     SelectComponent,
     AutocompleteComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    DatepickerComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -99,6 +104,8 @@ import { MatRadioModule } from '@angular/material/radio';
     ReactiveFormsModule,
     MatCheckboxModule,
     MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
